@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lista de tarefas</h1>
+        </header>
+        <div class="iniciar">
+            <button type="submit" id="iniciar-btn"> ADICIONAR</button>
+        </div>
+        <form class="form-inputs">
+            <input type="text" id="data" placeholder="Digite uma Data">
+            <input type="text" id="tarefa" required placeholder="Digite a Tarefa">
+            <input type="text" id="data-entrega" placeholder="Data de entrega">
+            <input type="text" id="descricao" placeholder="Descrição">
+        </form>
+        <form class="form-inputs">
+            <button type="submit" id="adicionar">ADICIONAR</button>
+            <button type="reset" id="botao-cancelar">CANCELAR</button>
+        </form>
+        <table cellspacing="1">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Tarefas</th>
+                    <th>Data de entrega</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody id="tabela">
+                <tr>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+        <footer class="footer">@ae.cerqueira | Todos os direitos reservados</footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #174747;
+    padding-top: 100px; ;
+}
+
+.container{
+    background-color: #0f928c;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+header h1{
+    font-size: 40px;
+    color: white;
+}
+
+.iniciar{
+    background-color: #00c9d2;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.iniciar button{
+    padding: 10px 10px;
+    background-color: green;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.iniciar button:hover{
+    background-color: rgb(54, 216, 54);
+}
+
+form{
+    display: flex;
+    max-width: 785px;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 15px;
+    justify-content:center;
+}
+
+form input{
+    margin: 10px 5px;
+    width: 30%;
+    font-size: 16px;
+    padding: 4px;
+    background-color: #d5fdff;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#adicionar{
+    margin: 10px;
+    width: 15%;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: green;
+}
+
+#adicionar:hover{
+    background-color: rgb(54, 216, 54);
+}
+
+#botao-cancelar{
+    margin: 10px;
+    width: 15%;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(146, 21, 21);
+}
+
+#botao-cancelar:hover{
+    background-color: red;
+}
+
+table{
+    width: 100%;
+    padding: 10px;
+}
+
+thead{
+    width: 100%;
+    font-size: 18px;
+    color: white;
+}
+tbody{
+    background-color: #484848;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+footer{
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #00c9d2;
+    color: white;
+    border-radius: 6x;
+    border: 1px solid black;
+}
