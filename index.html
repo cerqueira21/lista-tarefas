@@ -15,16 +15,16 @@
             <button type="submit" id="iniciar-btn"> ADICIONAR</button>
         </div>
         <form class="form-inputs">
-            <input type="text" id="data" placeholder="Digite uma Data">
+            <input type="date" id="data" placeholder="Digite uma Data">
             <input type="text" id="tarefa" required placeholder="Digite a Tarefa">
-            <input type="text" id="data-entrega" placeholder="Data de entrega">
+            <input type="date" id="data-entrega" placeholder="Data de entrega">
             <input type="text" id="descricao" placeholder="Descrição">
         </form>
         <form class="form-inputs">
             <button type="submit" id="adicionar">ADICIONAR</button>
             <button type="reset" id="botao-cancelar">CANCELAR</button>
         </form>
-        <table cellspacing="1">
+        <table>
             <thead>
                 <tr>
                     <th>Data</th>
@@ -35,10 +35,11 @@
             </thead>
             <tbody id="tabela">
                 <tr>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <button class="botao-excluir"><i class="excluir"></i></button>
                 </tr>
             </tbody>
         </table>

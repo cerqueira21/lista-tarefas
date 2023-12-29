@@ -109,15 +109,21 @@ table{
 }
 
 thead{
-    width: 100%;
     font-size: 18px;
     color: white;
 }
+
 tbody{
-    background-color: #484848;
+    border-collapse: collapse;
+    background: #436a6d;
+    width: 100%;
+    justify-content: space-around;
     color: white;
-    text-align: center;
     font-size: 15px;
+}
+
+tbody tr:nth-child(even){
+    background: #3d5858;
 }
 
 footer{

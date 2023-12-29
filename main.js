@@ -17,20 +17,21 @@ $(document).ready(function(){
         console.log(tareFa);
         console.log(dataEntrega);
         console.log(deSc);
-        const novoItem = $('<td></td>');
 
-        $(`<tbody id="tabela">
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>`).appendTo(novoItem);
+        if (daTa && tareFa && dataEntrega && deSc) {
+            const novoItem = $('<tr></tr>').append(
+                `<td>${daTa}</td>
+                 <td>${tareFa}</td>
+                 <td>${dataEntrega}</td>
+                 <td>${deSc}</td>`
+            );
 
-    $(novoItem).appendTo('tbody');
-    $(novoItem).fadeIn();
+            $('tbody').append(novoItem);
+            novoItem.fadeIn();
 
-    $('#data, #tarefa, #data-entrega, #descricao').val(' ');
-    })
+            $('#data, #tarefa, #data-entrega, #descricao').val('');
+        } else {
+            alert('Por favor, preencha todos os campos do formulário.');
+        }
+    });
 })
