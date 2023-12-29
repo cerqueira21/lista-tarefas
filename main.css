@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
 }
 
 body{
@@ -120,6 +121,10 @@ tbody{
     justify-content: space-around;
     color: white;
     font-size: 15px;
+}
+
+tbody tr:hover{
+    text-decoration: line-through
 }
 
 tbody tr:nth-child(even){
