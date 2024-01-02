@@ -34,4 +34,7 @@ $(document).ready(function(){
             alert('Por favor, preencha todos os campos do formulário.');
         }
     });
+    $("tbody").on("click", "tr", function(){
+        $(this).toggleClass("riscado");
+    });
 })

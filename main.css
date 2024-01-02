@@ -121,9 +121,10 @@ tbody{
     justify-content: space-around;
     color: white;
     font-size: 15px;
+    cursor:pointer;
 }
 
-tbody tr:hover{
+.riscado{
     text-decoration: line-through
 }
 
